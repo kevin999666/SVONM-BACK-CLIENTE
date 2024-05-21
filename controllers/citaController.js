@@ -3,7 +3,7 @@ const Cita = require("../models/Cita");
 
 exports.crearCita = async (req, res) => {
     try {
-        let producto;
+        let cita;
 
         //Creamos una cita
         cita = new Cita(req.body);

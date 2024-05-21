@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/api/citas', require('./routes/cita'));
+app.use('/api/contactos', require('./routes/contacto'));
 
 app.listen(4000, () => {
     console.log('El servidor esta corriendo perfectamente')
