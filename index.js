@@ -15,6 +15,7 @@ app.use('/api/citas', require('./routes/cita'));
 app.use('/api/contactos', require('./routes/contacto'));
 app.use('/api/catalogos', require('./routes/catalogo'));
 app.use('/api/diagnosticos', require('./routes/diagnostico'));
+app.use('api/probador', require('./routes/probador'));
 
 app.listen(4000, () => {
     console.log('El servidor esta corriendo perfectamente')
