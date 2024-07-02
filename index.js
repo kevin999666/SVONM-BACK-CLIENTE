@@ -13,7 +13,7 @@ app.use(express.json())
 
 app.use('/api/citas', require('./routes/cita'));
 app.use('/api/contactos', require('./routes/contacto'));
-app.use('/api/catalogos', require('./routes/catalogo'));
+app.use('/api/productos', require('./routes/producto'));
 app.use('/api/diagnosticos', require('./routes/diagnostico'));
 app.use('/api/image', require('./routes/image'))
 

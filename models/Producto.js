@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const CatalogoSchema = mongoose.Schema({
+const ProductoSchema = mongoose.Schema({
     codigo: {
       type: String,
       required: true,
@@ -25,10 +25,14 @@ const CatalogoSchema = mongoose.Schema({
       type: String,
       required: true
     },
+    proveedor: {
+      type: String,
+      required: true
+    },
     fechaCreacion: {
       type: Date,
       default: Date.now(),
     }
   });
 
-module.exports = mongoose.model('Catalogo', CatalogoSchema);
+module.exports = mongoose.model('Producto', ProductoSchema);
